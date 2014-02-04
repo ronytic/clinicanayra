@@ -51,6 +51,8 @@ $textomenu="";
 $textosubmenu="";
 $urlSubMenu=explode("/",$rsubmenu);
 $urlSubMenu=$urlSubMenu[0]."/";
+
+
 //echo $urlSubMenu;
 /*Fin de Obtenemos para el Menu*/
 $Nivel=$_SESSION['Nivel'];

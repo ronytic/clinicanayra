@@ -242,7 +242,7 @@
 						<?php */?>
 						<li class="gray">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="imagenes/usuarios/<?php echo $FotoSis?>" title="<?php echo $NombresSis." ".$ApellidoPSis?>" alt="<?php echo $NombresSis." ".$ApellidoPSis?>" />
+								<img class="nav-user-photo" src="<?php echo $folder?>imagenes/usuarios/<?php echo $FotoSis?>" title="<?php echo $NombresSis." ".$ApellidoPSis?>" alt="<?php echo $NombresSis." ".$ApellidoPSis?>" />
 								<span class="user-info">
 									<small><?php echo $idioma['Bienvenido']?>,</small>
 									<?php echo $NombresSis ?>
@@ -333,13 +333,13 @@
 					</div><!-- #sidebar-shortcuts -->
 
 					<ul class="nav nav-list">
-                        <li class="active"><a href="<?php echo $folder;?>index.php"><i class="icon-home"></i><span> <?php echo $idioma['Inicio']?></span></a>
+                        <li class="<?php echo $rmenu=="/"?'active':''?>"><a href="<?php echo $folder;?>index.php"><i class="icon-home"></i><span> <?php echo $idioma['Inicio']?></span></a>
                         </li>
                         <?php
                         	foreach($menu->mostrar($Nivel,"Lateral") as $m){
 								$subm=$submenu->mostrar($Nivel,$m['CodMenu']);
 								?>
-                                <li class="funo <?php if ($rmenu==$m['Url']){$textomenu=$idioma[$m['Nombre']];echo'active';}?>">
+                                <li class=" <?php if ($rmenu==$m['Url']){$textomenu=$idioma[$m['Nombre']];echo'active open';}?>">
                                 	<a href="#" class="<?php echo count($subm)?'dropdown-toggle':''?>">
                                     	<i class="<?php echo $m['Imagen'];?> "></i>
                                         <span class="menu-text"> <?php echo $idioma[$m['Nombre']];?></span>
@@ -361,7 +361,7 @@
 										//<hr class="separador">
 										?>
                                         
-                                        <li class="<?php if($urlSubMenu==$sm['Url']){$textosubmenu=$idioma[$sm['Nombre']];echo 'selecciona';}?>"> 
+                                        <li class="<?php if($urlSubMenu==$sm['Url']){$textosubmenu=$idioma[$sm['Nombre']];echo 'active';}?>"> 
                                         	<a href="<?php echo $folder;?><?php echo $m['Url'];?><?php echo $sm['Url'];?><?php echo $UrlInternet?>">
                                             
                                             <i class="icon-double-angle-right"></i>
