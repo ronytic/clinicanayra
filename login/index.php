@@ -89,10 +89,10 @@ $folder="../";
 							<div class="center">
 								<h1>
 									<i class="icon-fire green"></i>
-									<span class="red"><?php echo $TipoUnidadLogin;?></span>
+									<span class="red"><?php echo $title;?></span>
 
 								</h1>
-								<h4 class="blue"><?php echo $NombreUnidadLogin;?></h4>
+								<h4 class="blue"><?php echo $sigla;?></h4>
 							</div>
 
 							<div class="space-6"></div>

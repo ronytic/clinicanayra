@@ -20,7 +20,7 @@
 
 			<div class="navbar-container" id="navbar-container">
 				<div class="navbar-header pull-left">
-					<a href="#" class="navbar-brand">
+					<a href="<?php echo $folder?>" class="navbar-brand">
 						<small>
 							<i class="icon-fire"></i>
 							<?php echo $Titulo?>
