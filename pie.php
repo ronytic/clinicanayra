@@ -75,6 +75,8 @@
 
 <script language="javascript">
 	var TituloDocumento="<?php echo $idioma[$titulo]?>";
+	var DeseaEliminarRegistro="<?php echo $idioma["DeseaEliminarRegistro"]?>";
+	var DeseaModificarRegistro="<?php echo $idioma["DeseaModificarRegistro"]?>";
 	var folder="<?php echo $folder?>";
 	var mensajeg=Array();
 	mensajeg['EliminarRegistro']="<?php echo $idioma['EliminarRegistro']?>";

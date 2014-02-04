@@ -52,7 +52,6 @@ $textosubmenu="";
 $urlSubMenu=explode("/",$rsubmenu);
 $urlSubMenu=$urlSubMenu[0]."/";
 
-
 //echo $urlSubMenu;
 /*Fin de Obtenemos para el Menu*/
 $Nivel=$_SESSION['Nivel'];
@@ -124,8 +123,8 @@ $Gestion=$config->mostrarConfig("Gestion",1);
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 		<!--[if lt IE 9]>
-		<script src="<?php echo $folder;?>assets/js/html5shiv.js"></script>
-		<script src="<?php echo $folder;?>assets/js/respond.min.js"></script>
+		<script src="<?php echo $folder;?>js/core/adicionales/html5shiv.js"></script>
+		<script src="<?php echo $folder;?>js/core/adicionales/respond.min.js"></script>
 		<![endif]-->
 
 

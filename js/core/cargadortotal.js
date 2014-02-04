@@ -2,6 +2,7 @@ $(document).on("ready",inicio);
 var RedirigirLogin=0;
 
 function inicio(){
+	
 	$(document).on('submit','form.formulario', function(e) {
 		e.preventDefault(); // prevent native submit
 		var percent=$("#respuestaformulario")
@@ -22,19 +23,38 @@ function inicio(){
 			//bar.width("100%");
 			//percent.html("100%");
 			$("#respuestaformulario").html(xhr.responseText);
-			$("table").stickyTableHeaders();
-	$("table.inicio").stickyTableHeaders('destroy');
+			//$("table").stickyTableHeaders();
+			//$("table.inicio").stickyTableHeaders('destroy');
 			}
     	})
 		//$('html, body').animate({scrollTop:$("#respuestaformulario").position().top-200},300);
 		 
 	});
-	
+	$("#respuestaformulario").on("click",".eliminar",function(e){
+		var direccion=$(this).attr("href");
+		e.preventDefault();
+		e.stopPropagation();
+		if(confirm(DeseaEliminarRegistro)){
+			$.post(direccion,function(){
+				$("form.formulario").submit();	
+			});
+		}
+		return false;
+	});
+	$("#respuestaformulario").on("click",".modificar",function(e){
+		//var direccion=$(this).attr("href");
+		if(confirm(DeseaModificarRegistro)){
+			return true;
+		}else{
+			return false;
+		}
+	});
 
 	/*Gestionar Tabla*/
 	//$(window).trigger('resize.stickyTableHeaders');
 	//$("table:not(.inicio)").stickyTableHeaders();
 	/*Fin Gestionar Tabla*/
+	
 	//Al INICIO
 	$("table").stickyTableHeaders();
 	$("table.inicio").stickyTableHeaders('destroy');
@@ -46,7 +66,12 @@ function inicio(){
 	$('div.lateral').tooltip({'placement':'right'});
 	$('a[data-rel="tooltip"]').tooltip();
 	//FIN de INICIO
-	$('.fecha').datepicker({autoclose:true,format: "dd-mm-yyyy"}).mask('99-99-9999');	
+	
+	if (typeof configuracion != "undefined"){
+	var config = $.extend({}, {autoclose:true,format: "dd-mm-yyyy",todayBtn: "linked"}, configuracion);
+	}
+	$('.fecha').datepicker(config).mask('99-99-9999');	
+	
 	$(document).ajaxStart(function() {
       	$("#contenedorcargando").fadeIn('fast');  
     }).ajaxStop(function() {
@@ -59,27 +84,28 @@ function inicio(){
 		}
 		/*Fin de Redirigir*/
         //$("input[type=date]").datepicker({changeMonth: true,changeYear: true,yearRange:"c-100:c+10"});
-		alert("asd");
-		$('.fecha').datepicker({autoclose:true}).next().on("click", function(){
-					$(this).prev().focus();
-					alert("asd");
-				});
+		$('.fecha').datepicker({autoclose:true})
+		
 
 		/*Gestionar Tabla*/
-		$(window).trigger('resize.stickyTableHeaders');
+		//$(window).trigger('resize.stickyTableHeaders');
 		//alert($("table:not(.inicio)").length);
 		//$("table.inicio").css({"background-color":"red","box-shadow":"3px 3px 3px green"});
-		$("table").stickyTableHeaders();
-		$(window).trigger('resize.stickyTableHeaders');
-		$("table.inicio").stickyTableHeaders('destroy');
+		//$("table").stickyTableHeaders();
+		//$(window).trigger('resize.stickyTableHeaders');
+		//$("table.inicio").stickyTableHeaders('destroy');
 		
 		/*Fin Gestionar Tabla*/
+		
 		$('span[title]').tooltip();
-		$('a[title]').tooltip({'placement':'bottom'});
+		
+		$('body').tooltip({selector: '[title]','placement':'bottom'});
+		
 		$('input[title]').tooltip({'placement':'bottom'});
 		$('div[title]:not(.lateral)').tooltip({'placement':'bottom'});
 		$('div.lateral').tooltip({'placement':'right'});
 		$('a[data-rel="tooltip"]').tooltip();
+		
 		//pestañas horizontales corregir
 		$('.tabbable a').click(function (e) {
 			e.preventDefault();

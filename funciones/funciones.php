@@ -130,6 +130,99 @@ function campoM($texto,$nombre,$tipo="text",$valores="",$orientacion=0,$clase=""
 	}
 	if($orientacion==1 && $tipo!="radio" && $tipo!="checkbox"){?></div><?php }
 }
+function listadotabla($titulo,$datos,$enlaces=0,$ver="",$modifica="",$elimina="",$botones="",$adicional="",$target="_self"){
+	global $folder,$idioma;
+	if(count($datos)==0){
+		echo $idioma['NoSePudoEncontrar'];
+		return false;
+	}
+	?>
+    <div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover">
+	<thead>
+	<tr>
+	<th>Nº</th>
+	<?php foreach($titulo as $k=>$v){
+	?>
+	<th><?php echo $v?></th>
+	<?php
+	}?>
+	</tr>
+	</thead>
+	<tbody>
+	<?php
+	$i=0;
+	foreach($datos as $d){$i++;
+	?>
+	<tr class="contenido">
+		<td class="der"><?php echo $i;?></td>
+		<?php foreach($titulo as $k=>$v){
+			?>
+			<td><?php archivo($d[$k]);?></td>
+			<?php
+		}
+		//$ver=0;
+		if($enlaces==1){
+			
+			$id=array_shift($d);
+			if(!empty($ver)){
+			?>
+				<td><a href="<?php echo $ver;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-success" target="_blank" title="<?php echo $idioma['VerReporte']?>">
+                	<i class="icon-file"></i>
+                </a>
+			<?php
+			}
+			if(!empty($modifica)){
+			?>
+				<a href="<?php echo $modifica;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-info modificar" title="<?php echo $idioma['Modificar']?>">
+                	<i class="icon-edit"></i>
+                </a>
+			<?php
+			}
+			if(!empty($elimina)){
+			?>
+				<a href="<?php echo $elimina;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-danger eliminar" title="<?php echo $idioma['Eliminar']?>">
+                	<i class="icon-trash"></i>
+                </a>
+			<?php
+			}
+			if(!empty($botones)){
+			?>
+				<?php foreach ($botones as $k => $v): ?>
+				
+                	<a href="<?php echo $k;?>?<?php if(!empty($adicional)){foreach($adicional as $ak=>$av){ echo $ak."=".$av."&";}}?>Cod=<?php echo $id;?>" class="btn btn-xs" target="<?php echo $target?>"><?php echo $v; ?></a>	
+				<?php endforeach ?>
+			<?php
+			}
+		}
+		?>
+		</td>
+	</tr>
+	<?php
+	}
+	?>
+	</tbody>
+	</table>
+    </div>
+	<?php
+}
+function archivo($nombrearchivo){
+	global $directorio,$folder;
+	$datos=tipoarchivo($nombrearchivo);
+	$rdato="";
+	switch($datos){
+		case 'pdf':{ ?> <a href="<?php echo $directorio.$nombrearchivo;?>" target="_blank" class="enlace"><img src="<?php echo $folder."imagenes/iconoarchivo/pdf.gif";?>"><?php echo substr($nombrearchivo,0,10);?></a><?php }break;
+		case 'jpg':{ ?> <a href="<?php echo $directorio.$nombrearchivo;?>" target="_blank" class="enlace"><img src="<?php echo $folder."imagenes/iconoarchivo/image.gif";?>"><?php echo substr($nombrearchivo,0,10);?></a><?php }break;
+		case 'doc':{ ?> <a href="<?php echo $directorio.$nombrearchivo;?>" target="_blank" class="enlace"><img src="<?php echo $folder."imagenes/iconoarchivo/doc.gif";?>"><?php echo substr($nombrearchivo,0,10);?></a><?php }break;
+		case 'docx':{ ?> <a href="<?php echo $directorio.$nombrearchivo;?>" target="_blank" class="enlace"><img src="<?php echo $folder."imagenes/iconoarchivo/doc.gif";?>"><?php echo substr($nombrearchivo,0,10);?></a><?php }break;	
+		default:{echo $nombrearchivo;}break;
+	}
+}
+function tipoarchivo($nombrearchivo){
+	$partearchivo=explode(".",$nombrearchivo);
+	$tipoarchivo=end($partearchivo);
+	return $tipoarchivo;
+}
 function capitalizar($texto){
 	return ucwords($texto);
 }

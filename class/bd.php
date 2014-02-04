@@ -243,7 +243,6 @@ class bd{
 	}
 	function mostrarTodoRegistro($where='',$activo=1,$orden="")
 	{
-			
 		if(empty($this->campos)){
 			$this->campos=array('*');
 		}

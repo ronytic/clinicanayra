@@ -361,7 +361,7 @@
 										//<hr class="separador">
 										?>
                                         
-                                        <li class="<?php if($urlSubMenu==$sm['Url']){$textosubmenu=$idioma[$sm['Nombre']];echo 'active';}?>"> 
+                                        <li class="<?php if($rsubmenu==$sm['Url']){$textosubmenu=$idioma[$sm['Nombre']];echo 'active';}?>"> 
                                         	<a href="<?php echo $folder;?><?php echo $m['Url'];?><?php echo $sm['Url'];?><?php echo $UrlInternet?>">
                                             
                                             <i class="icon-double-angle-right"></i>
