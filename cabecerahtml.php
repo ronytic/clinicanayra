@@ -77,7 +77,7 @@ $Gestion=$config->mostrarConfig("Gestion",1);
 		<title><?php echo $idioma['TituloSistema']?></title>
 
 		<meta name="description" content="Sistema Desarrollado por Ronald Nina Layme">
-		<meta name="author" content="Ronald Nina Layme">
+		<meta name="author" content="Sistema Desarrollado por Ronald Nina Layme">
 
 		<!-- Inicio: Version Mobile -->
         <meta name="viewport" content="width=device-width, initial-scale=1">

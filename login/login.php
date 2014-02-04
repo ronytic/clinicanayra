@@ -10,12 +10,12 @@ if(!empty($_POST)){
 
 	include_once("../configuracion.php");
 	include_once("../class/usuario.php");
-	include_once("../class/alumno.php");
-	include_once("../class/docente.php");
+	/*include_once("../class/alumno.php");
+	include_once("../class/docente.php");*/
 	include_once("../class/logusuario.php");
 	$usu=new usuario;
-	$alumno=new alumno;
-	$docente=new docente;
+	/*$alumno=new alumno;
+	$docente=new docente;*/
 	$logusuario=new logusuario;
 	
 	$url=$_POST['u'];

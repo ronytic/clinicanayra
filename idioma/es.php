@@ -3,11 +3,15 @@ $idioma=array();
 //Login
 $idioma['Usuario']="Usuario";
 $idioma['Ingresar']="Ingresar";
+$idioma['Contraseña']="Contraseña";
+
+$idioma['Bienvenido']="Bienvenido";
 
 
 
 $idioma['Comunicados']="Comunicados";
 $idioma['Idioma']="Idioma";
+
 $idioma['NoPuedeIngresar']="¿No puedes acceder al Sistema?";
 $idioma['Pie']="Sistema Académico Administrativo";
 $idioma['NoComunicados']="NO EXISTEN COMUNICADOS";
@@ -41,7 +45,7 @@ $idioma['TamanoCarta']="Tamaño Carta";
 $idioma['TotalObservaciones']="Total de Observaciones";
 $idioma['AccesosUsuarioSistema']="Accesos de Usuarios al Sistema";
 
-$idioma['Bienvenido']="Bienvenido";
+
 //Menu
 $idioma['Menu']="Menú";
 $idioma['Inicio']="Inicio";
