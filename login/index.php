@@ -173,7 +173,7 @@ $folder="../";
 										<div class="toolbar clearfix">
 											<div>
 												
-                                                <small class="light-blue">Sistema Desarrollado por <br><a href="http://fb.com/ronaldnina/" class="light-blue" target="_blank">Ronald Nina Layme</a></small>
+                                                <small class="light-blue">Sistema Desarrollado por <br><a href="http://fb.com/ronaldnina/" class="light-blue" target="_blank" title="Cel: 73230568">Ronald Nina Layme</a></small>
                                             </div>
                                             <div>
                                             	<a class="light-blue">&copy; <?php echo date("Y")?></a>
