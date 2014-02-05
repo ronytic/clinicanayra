@@ -1,24 +1,104 @@
 <?php
 $idioma=array();
+$idioma['TituloSistema']="Sistema Administrativo Clinica Nayra";
+$idioma['DerechosReservados']="Todos los Derechos Reservados";
+$idioma['DesarrolladoPor']="Desarrollado por";
 //Login
 $idioma['Usuario']="Usuario";
 $idioma['Ingresar']="Ingresar";
 $idioma['Contraseña']="Contraseña";
-
 $idioma['Bienvenido']="Bienvenido";
+$idioma['NoDatos']="Por favor introdusca TODOS los DATOS.";
+$idioma['DatosErroneos']="El USUARIO o la CONTRASEÑA son incorrectos, verifique e intente nuevamente.";
+$idioma['IdiomaNoEncontrado']="Idioma no Encontrado";
+$idioma['AccesoSistema']="Acceso al Sistema";
 
 
 
+//Menu
+$idioma['Paciente']="Paciente";
+$idioma['Medico']="Medico";
+
+//Submenu
+$idioma['RegistrarNuevoPaciente']="Registrar Nuevo Paciente";
+$idioma['ListadoPacientes']="Listado de Pacientes";
+
+
+
+
+
+
+
+
+
+//Titulo
+$idioma['NPaginaPrincipal']="Página Principal";
+$idioma['NRegistroNuevoPaciente']="Registro de Nuevo Paciente";
+$idioma['NMensajeRespuesta']="Mensaje de Respuesta";
+$idioma['NBusquedaPacientes']="Búsqueda de Pacientes";
+$idioma['NModificarDatosPaciente']="Modificar Datos de Paciente";
+$idioma['NVerDatosPaciente']="Ver Datos de Paciente";
+//General
+$idioma['Menu']="Menú";
+$idioma['Inicio']="Inicio";
+$idioma['Nuevo']="Nuevo";
+$idioma['Listar']="Listar";
+$idioma['GuardadoCorrectamente']="Guardado Correctamente";
+$idioma['CriterioBusqueda']="Criterio de Búsqueda";
+$idioma['Buscar']="Buscar";
+$idioma['Resultado']="Resultado";
+$idioma['DeseaEliminarRegistro']="¿Esta Seguro que Desea Eliminar este Registro?";
+$idioma['DeseaModificarRegistro']="¿Desea Modificar este Registro?";
+$idioma['NoSePudoEncontrar']="No se pudo encontrar los datos solicitados";
+$idioma['Reporte']="Reporte";
+$idioma['Telefono']="Teléfono";
+$idioma['AbrirOtraVentana']="Abrir en Otra Ventana";
+$idioma['Sistema']="Sistema";
+$idioma['Hombre']="Hombre";
+$idioma['Mujer']="Mujer";
+$idioma['Hombres']="Hombres";
+$idioma['Mujeres']="Mujeres";
+$idioma['AmbosSexos']="Ambos Sexos";
+$idioma['Curso']="Curso";
+$idioma['Nombre']="Nombre";
+$idioma['Nombres']="Nombres";
+$idioma['Apellido']="Apellido";
+$idioma['Apellidos']="Apellidos";
+$idioma['ApellidoPaterno']="Apellido Paterno";
+$idioma['ApellidoMaterno']="Apellido Materno";
+$idioma['Celular']="Celular";
+$idioma['FechaNac']="FechaNac";
+$idioma['Ci']="CI";
+$idioma['FechaNacimiento']="Fecha de Nacimiento";
+$idioma['Observacion']="Observación";
+$idioma['Observaciones']="Observaciones";
+$idioma['Guardar']="Guardar";
+$idioma['Paterno']="Paterno";
+$idioma['Materno']="Materno";
+$idioma['VerReporte']="Ver Reporte";
+$idioma['Modificar']="Modificar";
+$idioma['Configuracion']="Configuración";
+$idioma['Eliminar']="Eliminar";
+$idioma['SalirSistema']="Salir del Sistema";
+$idioma['Salir']="Salir";
+$idioma['ReporteGenerado']="Reporte Generado";
+$idioma['FechaReporte']="Fecha Reporte";
+$idioma['Mensajes']="Mensajes";
+$idioma['Volver']="Volver";
+
+//Reporte
+$idioma['DatosPaciente']="Datos del Paciente";
+
+
+
+/*
 $idioma['Comunicados']="Comunicados";
 $idioma['Idioma']="Idioma";
 
 $idioma['NoPuedeIngresar']="¿No puedes acceder al Sistema?";
 $idioma['Pie']="Sistema Académico Administrativo";
 $idioma['NoComunicados']="NO EXISTEN COMUNICADOS";
-$idioma['NoDatos']="Por favor introdusca TODOS los DATOS.";
-$idioma['DatosErroneos']="El USUARIO o la CONTRASEÑA son incorrectos, verifique e intente nuevamente.";
-$idioma['IdiomaNoEncontrado']="Idioma no Encontrado";
-$idioma['AccesoSistema']="Acceso al Sistema";
+
 $idioma['ActualizarNavegador']="Actualizar Navegador";
 $idioma['AyudaTitulo']="Ayuda para Ingresar al Sistema";
 $idioma['PrimerProblemaAcceso']="Verifique el usuario y la contraseña esten bien escritos.";
@@ -27,13 +107,11 @@ $idioma['TercerProblemaAcceso']="Comuniquese con la Unidad Educativa al siguient
 $idioma['RecomendacionUsoSistema']="Para su Correcto funcionamiento del Sistema se recomienda Google Chrome, Firefox u otros navegadores actualizados y que el navegador se encuentre maximizado.";
 //Inicio
 $idioma['MostrarMenu']="Mostrar y Ocultar Menú";
-$idioma['TituloSistema']="Sistema Académico Administrativo para Colegios";
-$idioma['DerechosReservados']="Todos los Derechos Reservados";
-$idioma['DesarrolladoPor']="Desarrollado por";
+
 $idioma['Configuracion']="Configuración";
 $idioma['Notificacion']="Notificaciones";
 $idioma['TareaPendiente']="Tareas Pendientes";
-$idioma['Mensajes']="Mensajes";
+
 $idioma['Agenda']="Agenda";
 $idioma['MisActividades']="Mis Actividades";
 $idioma['Salir']="Salir";
@@ -47,8 +125,7 @@ $idioma['AccesosUsuarioSistema']="Accesos de Usuarios al Sistema";
 
 
 //Menu
-$idioma['Menu']="Menú";
-$idioma['Inicio']="Inicio";
+
 
 //Navegación
 $idioma['NInscripcionAlumnoNuevo']="Inscripción Alumno Nuevo";
@@ -162,9 +239,8 @@ $idioma['BoletaDatos']="Boleta de Datos";
 $idioma['PagarCuotas']="Pagar Cuotas";
 
 $idioma['DebeCancelarMensualidades']="Debe de Cancelar Mensualidades para ver este sector del Sistema, Muchas Gracias";
-$idioma['Modificar']="Modificar";
-$idioma['Configuracion']="Configuración";
-$idioma['Guardar']="Guardar";
+
+
 $idioma['PadreFamilia']="Padre de Familia";
 $idioma['Sistema']="Sistema";
 $idioma['Hombre']="Hombre";
@@ -181,17 +257,16 @@ $idioma['ApellidoPaterno']="Apellido Paterno";
 $idioma['ApellidoMaterno']="Apellido Materno";
 $idioma['Colegio']="Colegio";
 $idioma['Rude']="Rude";
-$idioma['Paterno']="Paterno";
-$idioma['Materno']="Materno";
+
 $idioma['Contraseña']="Contraseña";
 $idioma['CambiarContraseña']="Cambiar Contraseña";
 $idioma['Sexo']="Sexo";
 $idioma['CedulaIdentidad']="Cedula de Identidad";
-$idioma['FechaNacimiento']="Fecha de Nacimiento";
+
 $idioma['Departamento']="Departamento";
 $idioma['Provincia']="Provincia";
 $idioma['Direccion']="Dirección";
-$idioma['Celular']="Celular";
+
 $idioma['EstadoCivil']="Estado Civil";
 $idioma['Email']="Email";
 $idioma['Dato']="Dato";
@@ -204,15 +279,14 @@ $idioma['Cargo']="Cargo";
 $idioma['Antiguedad']="Antiguedad";
 $idioma['Categoria']="Categoria";
 $idioma['CargaHoraria']="Carga Horaria";
-$idioma['Observacion']="Observación";
+
 $idioma['DatosFormacionProfesional']="Datos de Formación Profesional";
 $idioma['Universidad']="Universidad";
 $idioma['AñoIngreso']="Año de Ingreso";
 $idioma['AñoEgreso']="Año de Egreso";
 $idioma['AñoTitulacion']="Año de Titulación";
 $idioma['Titulo']="Título";
-$idioma['Telefono']="Teléfono";
-$idioma['AbrirOtraVentana']="Abrir en Otra Ventana";
+
 $idioma['Ninguno']="Ninguno";
 $idioma['Por']="Por";
 $idioma['Docente']='Docente';
@@ -261,7 +335,7 @@ $idioma['Hora']="Hora";
 $idioma['Horas']="Horas";
 $idioma['CantidadTotal']="Cantidad Total";
 $idioma['Cursos']="Cursos";
-$idioma['Eliminar']="Eliminar";
+
 $idioma['Importante']="Importante";
 $idioma['Trimestre']="Trimestre";
 $idioma['Bimestre']="Bimestre";
@@ -273,7 +347,7 @@ $idioma['ImagenRecomendada']="Imágen Recomendada";
 $idioma['TipoArchivo']="Tipo de Archivo";
 $idioma['TamanoArchivo']="Tamaño Archivo";
 $idioma['PorFavor']="Por favor";
-$idioma['ReporteGenerado']="Reporte Generado";
+
 $idioma['Pais']="Pais";
 $idioma['FolioN']="Folio N";
 $idioma['PartidaN']="Partida N";
@@ -372,7 +446,7 @@ $idioma['TodoAlumnos']="Todos los Alumnos";
 $idioma['SoloParaMi']="Solo Para Mi";
 $idioma['ActividadesDel']="Actividades del";
 $idioma['ActividadesDelDia']="Actividades del Día";
-$idioma['SalirSistema']="Salir del Sistema";
+
 $idioma['ReporteFaltaAtrasos']="Reporte de Faltas, Atrasos y Licencias";
 //Alumno
 $idioma['SeparacionDatos']="La separación de varios datos se lo realiza con el \"/\" (shif+7)(Símbolo Dividido)";
@@ -469,7 +543,7 @@ $idioma['RegistrarFacturaCombinada']="Factura Combinada";
 //Pdf
 $idioma['Pagina']="Página";
 $idioma['FechaActual']="Fecha Actual";
-$idioma['FechaReporte']="Fecha Reporte";
+
 $idioma['Del']="del";
 $idioma['Primera']="Primera";
 $idioma['Segunda']="Segunda";
@@ -528,7 +602,7 @@ $idioma['CelularMadre']="Celular de la Madre";
 $idioma['Reporte']="Reporte";
 $idioma['MontoBeca']="Monto de Beca";
 $idioma['AlumnosBecados']="Alumnos Becados";
-$idioma['VerReporte']="Ver Reporte";
+
 $idioma['TodoBecados']="Todos los Becados";
 $idioma['Columna1']="Columna 1";
 $idioma['Columna2']="Columna 2";
@@ -671,7 +745,7 @@ $idioma['GuardarNota']="Guardar Nota";
 $idioma['RegistroNotas']="Registro de Notas";
 $idioma['RegistroImprimir']="Registro para Imprimir";
 $idioma['CambiarNombreCasillas']="Cambiar nombre Casillas";
-$idioma['Resultado']="Resultado";
+
 $idioma['Final']="Final";
 $idioma['Dps']="Dps";
 $idioma['NotaFinal']="Nota Final";
@@ -1050,9 +1124,8 @@ $idioma['RegistrarNuevaObservacion']="Registrar Nueva Observación";
 $idioma['NoHayPagoCuotasFecha']="No hay Pago de Cuotas en esta Fecha";
 $idioma['VerTodosLosAccesos']="Ver Todos los Accesos";
 $idioma['Recaudado']="Recaudado";
-/*Mensajes Globales Javascript*/
 $idioma['EliminarRegistro']="¿Seguro que desea eliminar este registro?";
-/*Fin Mensajes*/
+
 
 //Curso
 $idioma['Añadir']="Añadir";
@@ -1122,7 +1195,6 @@ $idioma['ModificarMateria']="Modificar Materia";
 $idioma['NotaValido']="Una Materia se le asigna con el valor 'SI' cuando la Materia se usará para los reporte y para el sistema en total, se le asigna el valor de 'NO' cuando se utilizara el valor de Materia como un referetne solo para la Agenda de Observaciones, Por ejemplo Nombre de Docentes en particular como valor de materia";
 $idioma['NotaPromedioCiencias']="Se le asgina el valor de si cuando la Materia se tomará como parte para calcular la nota de la materia combinada";
 $idioma['NoExisteMateriasRegistrados']="No Existen Materias Registradas";
-/*Internet*/
 $idioma['Inicio']="Inicio";
 $idioma['Cuotas']="Cuotas";
 $idioma['Pendiente']="Pendiente";
@@ -1282,7 +1354,7 @@ $idioma['NFactura']="Número de Factura";
 $idioma['NReferencia']="Número de Referencia";
 $idioma['Codigo']="Código";
 $idioma['Senores']="Señores";
-$idioma['Buscar']="Buscar";
+
 $idioma['ImporteCobrado']="Importe Cobrado";
 $idioma['MontoCuota']="Monto Cuota";
 $idioma['Interes']="Interes";
@@ -1356,5 +1428,5 @@ $idioma['SeguroRegistrarNotas']="¿Esta Seguro de Registrar este Archivo de  Not
 $idioma['SiEstoySeguro']="Sí, estoy Seguro(a)";
 $idioma['NoEstoySeguro']="No, Quiero Subir otro Archivo";
 $idioma['VolverSeleccionarArchivo']="Volver y Seleccionar otro Archivo";
-$idioma['RegistroNotasDesHabilitadoArchivo']="Puede ser debido a que seleccionó un archivo incorrecto o pertenece a otro periodo o el Administrador del Sistema Deshabilito el Registro de Notas, Verifique y vuelva Intentarlo";
+$idioma['RegistroNotasDesHabilitadoArchivo']="Puede ser debido a que seleccionó un archivo incorrecto o pertenece a otro periodo o el Administrador del Sistema Deshabilito el Registro de Notas, Verifique y vuelva Intentarlo";*/
 ?>
