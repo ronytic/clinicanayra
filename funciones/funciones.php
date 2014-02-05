@@ -167,7 +167,7 @@ function listadotabla($titulo,$datos,$enlaces=0,$ver="",$modifica="",$elimina=""
 			$id=array_shift($d);
 			if(!empty($ver)){
 			?>
-				<td><a href="<?php echo $ver;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-success" target="_blank" title="<?php echo $idioma['VerReporte']?>">
+				<td><a href="<?php echo $ver;?>?Cod=<?php echo $id;?>" class="btn btn-xs btn-success" target="" title="<?php echo $idioma['VerReporte']?>">
                 	<i class="icon-file"></i>
                 </a>
 			<?php

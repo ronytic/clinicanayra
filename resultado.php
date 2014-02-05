@@ -12,7 +12,7 @@ if(!isset($Listar)){
 
 <div class="col-sm-12">
 	<div class="widget-box">
-    	<div class="widget-header widget-header-flat"><h4><?php echo $idioma['Mensaje'] ?></h4></div>
+    	<div class="widget-header widget-header-flat"><h4><?php echo $idioma['Mensajes'] ?></h4></div>
         <div class="widget-body">
         	<div class="widget-main">
             	<ul class="list-unstyled">

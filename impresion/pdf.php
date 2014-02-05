@@ -18,10 +18,10 @@ include_once("fpdf_protection.php");
 		var $ancho=176;
 		function Header(){
 			global $idioma;
-			$this->SetTitle(utf8_decode("Sistema Académico Administrativo para Colegios"),true);
-			$this->SetAuthor(utf8_decode("Sistema Académico Administrativo para Colegios Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
-			$this->SetSubject(utf8_decode("Sistema Académico Administrativo para Colegios Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
-			$this->SetCreator(utf8_decode("Sistema Académico Administrativo para Colegios Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
+			$this->SetTitle(utf8_decode("Sistema de Administración de Clinica"),true);
+			$this->SetAuthor(utf8_decode("Sistema de Administración de Clinica Desarrollado por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
+			$this->SetSubject(utf8_decode("Sistema de Administración de Clinica por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
+			$this->SetCreator(utf8_decode("Sistema de Administración de Clinica por Ronald Nina Layme. Cel: 73230568 - www.facebook.com/ronaldnina"),true);
 			$this->SetProtection(array('print'));
 			if($this->CurOrientation=="P"){$this->ancho=176;}else{$this->ancho=246;}
 			$this->SetLeftMargin(18);
@@ -114,6 +114,13 @@ include_once("fpdf_protection.php");
 		function Linea(){
 			$this->Cell($this->ancho,0,"",1,1);
 			$this->Ln();	
+		}
+		function Mostrar($valores,$ancho1=50,$ancho2=70,$alto=6){
+			foreach($valores as $k=>$v){
+				$this->CuadroCuerpo($ancho1,$k,0,"",0,"","B");
+				$this->CuadroCuerpo($ancho2,$v,0,"",0,"","");
+				$this->ln($alto);
+			}
 		}
 		function Footer()
 		{	global $lema,$idioma;
