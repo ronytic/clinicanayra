@@ -8,7 +8,7 @@ $Materno=$Materno!=""?"Materno LIKE '$Materno%'":"Materno LIKE '%'";
 $Nombres=$Nombres!=""?"Nombres LIKE '$Nombres%'":"Nombres LIKE '%'";
 $Ci=$Ci!=""?"Ci LIKE '$Ci%'":"Ci LIKE '%'";
 $condicion="$Paterno and $Materno and $Nombres and $Ci";
-$pac=$paciente->mostrarTodoRegistro($condicion);
+$pac=$paciente->mostrarTodoRegistro($condicion,1,"Paterno,Materno,Nombres,Ci");
 $titulo=array(	"Paterno"=>$idioma['Paterno'],
 				"Materno"=>$idioma['Materno'],
 				"Nombres"=>$idioma['Nombre'],
