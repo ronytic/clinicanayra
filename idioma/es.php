@@ -41,6 +41,9 @@ $idioma['NMensajeRespuesta']="Mensaje de Respuesta";
 $idioma['NBusquedaPacientes']="Búsqueda de Pacientes";
 $idioma['NModificarDatosPaciente']="Modificar Datos de Paciente";
 $idioma['NVerDatosPaciente']="Ver Datos de Paciente";
+$idioma['NRegistroNuevaEspecialidad']="Registro de Nueva Especialidad Médica";
+$idioma['NBusquedaEspecialidades']="Búsqueda de Especialidades";
+$idioma['NVerDatosEspecialidad']="Ver Datos de Especialidades Médicas";
 //General
 $idioma['Menu']="Menú";
 $idioma['Inicio']="Inicio";
@@ -89,7 +92,11 @@ $idioma['FechaReporte']="Fecha Reporte";
 $idioma['Mensajes']="Mensajes";
 $idioma['Volver']="Volver";
 
+$idioma['Detalle']="Detalle";
+
 //Reporte
+$idioma['DatosEspecialidad']="Datos de Especialidad Médica";
+$idioma['NombreEspecialidad']="Nombre de la Especialidad";
 $idioma['DatosPaciente']="Datos del Paciente";
 
 
