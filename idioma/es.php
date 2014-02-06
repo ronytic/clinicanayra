@@ -22,7 +22,10 @@ $idioma['Medico']="Medico";
 //Submenu
 $idioma['RegistrarNuevoPaciente']="Registrar Nuevo Paciente";
 $idioma['ListadoPacientes']="Listado de Pacientes";
-
+$idioma['RegistrarNuevoMedico']="Registrar Nuevo Médico";
+$idioma['ListadoMedicos']="Listado de Médicos";
+$idioma['NuevaEspecialidadMedico']="Nueva Especialidad para Médico";
+$idioma['ListadoEspecialidadMedico']="Listado de Especialidades de Médico";
 
 
 

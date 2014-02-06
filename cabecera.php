@@ -358,10 +358,10 @@
 										if($sm['Internet']=="1" && $Internet==0){
 											$UrlInternet="redirigir.php";	
 										}
-										//<hr class="separador">
+										//echo $m['Url'].$rsubmenu;
 										?>
                                         
-                                        <li class="<?php if($rsubmenu==$sm['Url']){$textosubmenu=$idioma[$sm['Nombre']];echo 'active';}?>"> 
+                                        <li class="<?php if($rmenu.$rsubmenu==$m['Url'].$sm['Url']){$textosubmenu=$idioma[$sm['Nombre']];echo 'active';}?>"> 
                                         	<a href="<?php echo $folder;?><?php echo $m['Url'];?><?php echo $sm['Url'];?><?php echo $UrlInternet?>">
                                             
                                             <i class="icon-double-angle-right"></i>
