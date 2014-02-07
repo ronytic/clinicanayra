@@ -20,7 +20,7 @@ $pdf->Mostrar(array(
 		$idioma["Ci"]=>$pac['Ci'],
 		$idioma["Telefono"]=>$pac['Telefono'],
 		$idioma["Celular"]=>$pac['Celular'],
-		$idioma["FechaNacimiento"]=>$pac['FechaNac'],
+		$idioma["FechaNacimiento"]=>fecha2Str($pac['FechaNac']),
 		$idioma["Observaciones"]=>$pac['Observaciones'],
 	)
 );
