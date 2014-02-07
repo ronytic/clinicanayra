@@ -339,8 +339,12 @@ function quitarSimbolos($string,$Espacio=true){
 	}
     return $string;
 }
-function todoLista($datos,$k,$v,$separador=" "){
+function todoLista($datos,$k,$v,$separador=" ",$Seleccionar=0){
+	global $idioma;
 	$data=array();
+	if($Seleccionar==1){
+		//$data['']=$idioma['Seleccionar'];
+	}
 	foreach($datos as $d){
 		$valor=array();
 		foreach(explode(",",$v) as $val){
