@@ -10,6 +10,7 @@ $Valores=array("Paterno"=>"'$Paterno'",
 				"Telefono"=>"'$Telefono'",
 				"Celular"=>"'$Celular'",
 				"FechaNac"=>"'".fecha2Str($FechaNac,0)."'",
+				"Direccion"=>"'$Direccion'",
 				"Observaciones"=>"'$Observaciones'",
 );
 $paciente->actualizarRegistro($Valores,"CodPaciente=".$Cod);

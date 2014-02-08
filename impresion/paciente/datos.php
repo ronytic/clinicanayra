@@ -21,6 +21,7 @@ $pdf->Mostrar(array(
 		$idioma["Telefono"]=>$pac['Telefono'],
 		$idioma["Celular"]=>$pac['Celular'],
 		$idioma["FechaNacimiento"]=>fecha2Str($pac['FechaNac']),
+		$idioma["Direccion"]=>$pac['Direccion'],
 		$idioma["Observaciones"]=>$pac['Observaciones'],
 	)
 );

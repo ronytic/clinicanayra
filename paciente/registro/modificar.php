@@ -10,7 +10,7 @@ $pac=array_shift($pac);
 include_once($folder."cabecerahtml.php");
 ?>
 <script language="javascript">
-configuracion={todayBtn: "", endDate: "'0d'"};
+configuracion={todayBtn: false, endDate: "'0d'"};
 </script>
 <?php include_once($folder."cabecera.php");?>
 <form action="actualizar.php" method="post">
@@ -43,6 +43,10 @@ configuracion={todayBtn: "", endDate: "'0d'"};
     <tr>
     	<td class="der"><?php echo $idioma['FechaNacimiento'] ?></td>
         <td><?php campo("FechaNac","text",fecha2Str($pac['FechaNac']),"fecha")?></td>
+    </tr>
+    <tr>
+    	<td class="der"><?php echo $idioma['Direccion'] ?></td>
+        <td><?php campo("Direccion","text",$pac['Direccion'],"col-xs-12",1,"","",array("maxlength"=>250))?></td>
     </tr>
     <tr>
     	<td class="der"><?php echo $idioma['Observaciones'] ?></td>
