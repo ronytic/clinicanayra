@@ -2,9 +2,15 @@
 $titulo="NMensajeRespuesta";
 if(!isset($Nuevo)){
 	$Nuevo=1;	
+	if($ArchivoNuevo==''){
+		$ArchivoNuevo="index.php";	
+	}
 }
 if(!isset($Listar)){
 	$Listar=1;	
+	if($ArchivoListar==''){
+		$ArchivoListar="listar.php";	
+	}
 }
 ?>
 <?php include_once($folder."cabecerahtml.php");?>
@@ -23,10 +29,10 @@ if(!isset($Listar)){
 
 				<hr>
                 <?php if($Nuevo==1){?>
-                <a href="<?php echo "index.php"?>" class="btn btn-info"><?php echo $idioma['Nuevo']?></a>
+                <a href="<?php echo $ArchivoNuevo?>" class="btn btn-info"><?php echo $idioma['Nuevo']?></a>
                 <?php }?>
                 <?php if($Listar==1){?>
-                <a href="<?php echo "listar.php"?>" class="btn btn-success"><?php echo $idioma['Listar']?></a>
+                <a href="<?php echo $ArchivoListar?>" class="btn btn-success"><?php echo $idioma['Listar']?></a>
                 <?php }?>
                 
                 <?php 
