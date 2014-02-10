@@ -68,9 +68,30 @@ function inicio(){
 	//FIN de INICIO
 	
 	if (typeof configuracion != "undefined"){
-	var config = $.extend({}, {autoclose:true,format: "dd-mm-yyyy",todayBtn: "linked"}, configuracion);
+		var config = $.extend({}, {autoclose:true,format: "dd-mm-yyyy",todayBtn: "linked"}, configuracion);
+	}else{
+		var config={autoclose:true,format: "dd-mm-yyyy",todayBtn: "linked"};
 	}
+	//$('.hora').timepicker('setTime', '12:48 AM');
 	$('.fecha').datepicker(config).mask('99-99-9999');	
+	$('.FechaRangoIdependiente').datepicker({
+    	todayBtn: "linked"
+	}).find("input").mask('99-99-9999');
+	
+	
+	$('.FechaRango').daterangepicker({
+      ranges: {
+         'Hoy': [moment(), moment()],
+         'Ayer': [moment().subtract('days', 1), moment().subtract('days', 1)],
+         'Últimos 7 Días': [moment().subtract('days', 6), moment()],
+         'Últimos 30 Días': [moment().subtract('days', 29), moment()],
+         'Este Mes': [moment().startOf('month'), moment().endOf('month')],
+         'El Mes Pasado': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+      },
+	  maxDate:moment(),
+      startDate: moment(),
+      endDate: moment()
+    });
 	
 	$(document).ajaxStart(function() {
       	$("#contenedorcargando").fadeIn('fast');  
