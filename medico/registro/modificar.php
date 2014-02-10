@@ -13,7 +13,7 @@ $esp=todolista($especialidad->mostrarTodoRegistro("",1,"Nombre"),"CodEspecialida
 include_once($folder."cabecerahtml.php");
 ?>
 <script language="javascript">
-configuracion={todayBtn: "", endDate: "'0d'"};
+configuracion={todayBtn: false, endDate: "'0d'"};
 </script>
 <?php include_once($folder."cabecera.php");?>
 <form action="actualizar.php" method="post">
