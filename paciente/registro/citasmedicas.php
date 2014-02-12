@@ -95,7 +95,7 @@ $(document).on("ready",function(){
                 
            
             <hr>
-            <div class="" id="respuestaformulario">s</div>
+            <div class="" id="respuestaformulario"></div>
         </div>
     </div>
 </div>
