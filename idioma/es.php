@@ -18,7 +18,7 @@ $idioma['AccesoSistema']="Acceso al Sistema";
 //Menu
 $idioma['Paciente']="Paciente";
 $idioma['Medico']="Medico";
-
+$idioma['Productos']="Productos";
 //Submenu
 $idioma['RegistrarNuevoPaciente']="Registrar Nuevo Paciente";
 $idioma['ListadoPacientes']="Listado de Pacientes";
@@ -26,7 +26,10 @@ $idioma['RegistrarNuevoMedico']="Registrar Nuevo Médico";
 $idioma['ListadoMedicos']="Listado de Médicos";
 $idioma['NuevaEspecialidadMedico']="Nueva Especialidad para Médico";
 $idioma['ListadoEspecialidadMedico']="Listado de Especialidades de Médico";
-
+$idioma['NuevoTipoProducto']="Nuevo Tipo de Producto";
+$idioma['ListadoTipoProductos']="Listado de Tipos de Productos";
+$idioma['NuevoProducto']="Nuevo Producto";
+$idioma['ListadoProductos']="Listado de Productos";
 
 
 
@@ -50,6 +53,10 @@ $idioma['NVerDatosMedico']="Ver Datos de Médico";
 $idioma['NModificarDatosMedico']="Modificar Datos del Médico";
 $idioma['NCitasMedicas']="Citas Médicas";
 $idioma['NPedidoOptica']="Orden de Trabajo de Optica";
+$idioma['NRegistroTipoProducto']="Registro de Nuevo Tipo de Producto";
+$idioma['NBusquedaTipoProductos']="Búsqueda de Tipo de Productos";
+$idioma['NVerDatosTipoProducto']="Ver Datos Tipo de Productos";
+$idioma['NModificarTipoProducto']="Modificar Tipos de Productos";
 //General
 $idioma['Menu']="Menú";
 $idioma['Inicio']="Inicio";
@@ -110,7 +117,7 @@ $idioma['PrecioTotal']="Precio Total";
 $idioma['Total']="Total";
 $idioma['Saldo']="Saldo";
 $idioma['ACuenta']="A Cuenta";
-
+$idioma['Descripcion']="Descripción";
 //Reporte
 $idioma['Especialidad']="Especialidad";
 $idioma['DatosEspecialidad']="Datos de Especialidad Médica";
@@ -134,5 +141,7 @@ $idioma['Doctor']="Doctor";
 $idioma['Estuche']="Estuche";
 $idioma['NotaOpticaGuardar']="Revise Bien los Datos por Registrar posteriormente no se podrá modificar ";
 $idioma['NumeroBoleta']="Número de Boleta";
+$idioma['DatosTipoProducto']="Datos Tipo de Producto";
+
 
 ?>
