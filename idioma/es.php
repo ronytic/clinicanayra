@@ -57,6 +57,10 @@ $idioma['NRegistroTipoProducto']="Registro de Nuevo Tipo de Producto";
 $idioma['NBusquedaTipoProductos']="Búsqueda de Tipo de Productos";
 $idioma['NVerDatosTipoProducto']="Ver Datos Tipo de Productos";
 $idioma['NModificarTipoProducto']="Modificar Tipos de Productos";
+$idioma['NRegistroNuevoProducto']="Registro de Nuevo Producto";
+$idioma['NBusquedaProductos']="Búsqueda de Productos";
+$idioma['NModificarDatosProducto']="Modificar Datos del Producto";
+$idioma['NVerDatosProducto']="Ver Datos del Producto";
 //General
 $idioma['Menu']="Menú";
 $idioma['Inicio']="Inicio";
@@ -139,9 +143,10 @@ $idioma['Lejos']="Lejos";
 $idioma['Cerca']="Cerca";
 $idioma['Doctor']="Doctor";
 $idioma['Estuche']="Estuche";
-$idioma['NotaOpticaGuardar']="Revise Bien los Datos por Registrar posteriormente no se podrá modificar ";
+$idioma['NotaOpticaGuardar']="Revise Bien los Datos a Registrar, posteriormente no se podrá modificar ";
 $idioma['NumeroBoleta']="Número de Boleta";
 $idioma['DatosTipoProducto']="Datos Tipo de Producto";
-
-
+$idioma['UnidadMedida']="Unidad de Medida";
+$idioma['TipoProducto']="Tipo de Producto";
+$idioma['DatosProducto']="Datos de Producto";
 ?>
