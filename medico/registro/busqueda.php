@@ -9,7 +9,9 @@ $Paterno=$Paterno!=""?"Paterno LIKE '$Paterno%'":"Paterno LIKE '%'";
 $Materno=$Materno!=""?"Materno LIKE '$Materno%'":"Materno LIKE '%'";
 $Nombres=$Nombres!=""?"Nombres LIKE '$Nombres%'":"Nombres LIKE '%'";
 $Ci=$Ci!=""?"Ci LIKE '$Ci%'":"Ci LIKE '%'";
-$condicion="$Paterno and $Materno and $Nombres and $Ci";
+$CodEspecialidad=$CodEspecialidad!=""?"CodEspecialidad LIKE '$CodEspecialidad'":"CodEspecialidad LIKE '%'";
+
+$condicion="$Paterno and $Materno and $Nombres and $Ci and $CodEspecialidad";
 $med=$medico->mostrarTodoRegistro($condicion,1,"Paterno,Materno,Nombres,Ci");
 foreach($med as $m){$i++;
 	$esp=$especialidad->mostrarRegistro($m['CodEspecialidad']);
