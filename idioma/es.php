@@ -19,6 +19,7 @@ $idioma['AccesoSistema']="Acceso al Sistema";
 $idioma['Paciente']="Paciente";
 $idioma['Medico']="Medico";
 $idioma['Productos']="Productos";
+$idioma['Inventario']="Inventario";
 //Submenu
 $idioma['RegistrarNuevoPaciente']="Registrar Nuevo Paciente";
 $idioma['ListadoPacientes']="Listado de Pacientes";
