@@ -30,6 +30,11 @@ function inicio(){
 		//$('html, body').animate({scrollTop:$("#respuestaformulario").position().top-200},300);
 		 
 	});
+	$(document).on("submit",".formularioconfirmacion",function(e){
+		if(!confirm($(this).attr("data-mensaje"))){
+			e.preventDefault();
+		}
+	});
 	$("#respuestaformulario").on("click",".eliminar",function(e){
 		var direccion=$(this).attr("href");
 		e.preventDefault();
