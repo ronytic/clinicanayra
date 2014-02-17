@@ -31,8 +31,8 @@ $idioma['NuevoTipoProducto']="Nuevo Tipo de Producto";
 $idioma['ListadoTipoProductos']="Listado de Tipos de Productos";
 $idioma['NuevoProducto']="Nuevo Producto";
 $idioma['ListadoProductos']="Listado de Productos";
-
-
+$idioma['RecargarInventario']="Recargar Inventario";
+$idioma['ListadoInventario']="Listado de Inventario";
 
 
 
@@ -62,6 +62,8 @@ $idioma['NRegistroNuevoProducto']="Registro de Nuevo Producto";
 $idioma['NBusquedaProductos']="Búsqueda de Productos";
 $idioma['NModificarDatosProducto']="Modificar Datos del Producto";
 $idioma['NVerDatosProducto']="Ver Datos del Producto";
+$idioma['NRecargaInventario']="Recarga de Inventario";
+$idioma['NBusquedaInventario']="Búsqueda de Inventario";
 //General
 $idioma['Menu']="Menú";
 $idioma['Inicio']="Inicio";
@@ -123,6 +125,9 @@ $idioma['Total']="Total";
 $idioma['Saldo']="Saldo";
 $idioma['ACuenta']="A Cuenta";
 $idioma['Descripcion']="Descripción";
+$idioma['FechaRegistro']="Fecha de Registro";
+$idioma['Si']="Si";
+$idioma['No']="No";
 //Reporte
 $idioma['Especialidad']="Especialidad";
 $idioma['DatosEspecialidad']="Datos de Especialidad Médica";
@@ -150,4 +155,8 @@ $idioma['DatosTipoProducto']="Datos Tipo de Producto";
 $idioma['UnidadMedida']="Unidad de Medida";
 $idioma['TipoProducto']="Tipo de Producto";
 $idioma['DatosProducto']="Datos de Producto";
+$idioma['Cantidad']="Cantidad";
+$idioma['Producto']="Producto";
+$idioma['Aumentar']="Aumentar";
+$idioma['EnExistencia']="En Existencia";
 ?>
